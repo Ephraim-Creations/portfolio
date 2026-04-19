@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Ephraim Mutwiri</title>
+    <meta name="robots" content="noindex">
+    <style>
+        :root {
+            --bg: #06110d;
+            --bg-soft: #0b1712;
+            --card: rgba(18, 30, 24, 0.92);
+            --border: rgba(135, 168, 146, 0.18);
+            --text: #eef5ef;
+            --muted: #b7c7bc;
+            --accent: #dce8df;
+            --accent-dark: #07110d;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background:
+                radial-gradient(circle at top left, rgba(58, 102, 76, 0.18), transparent 28%),
+                radial-gradient(circle at 85% 10%, rgba(54, 92, 67, 0.16), transparent 24%),
+                linear-gradient(180deg, #04100b 0%, #06110d 34%, #07120f 100%);
+            color: var(--text);
+        }
+
+        main {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .wrapper {
+            width: 100%;
+            max-width: 680px;
+            text-align: center;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 3rem 2rem;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
+        }
+
+        .small {
+            font-size: 0.85rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: clamp(3.5rem, 10vw, 6rem);
+            line-height: 1;
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+
+        h2 {
+            font-size: clamp(1.5rem, 4vw, 2.2rem);
+            line-height: 1.15;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: var(--muted);
+            max-width: 52ch;
+            margin: 0 auto 1rem;
+            line-height: 1.7;
+        }
+
+        .actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 50px;
+            padding: 0 1.3rem;
+            border-radius: 999px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: 0.25s ease;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #e9f3eb 0%, #cad8ce 100%);
+            color: var(--accent-dark);
+        }
+
+        .btn-secondary {
+            border: 1px solid rgba(220, 232, 223, 0.25);
+            color: var(--text);
+            background: rgba(255, 255, 255, 0.03);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 560px) {
+            .wrapper {
+                padding: 2.2rem 1.2rem;
+            }
+
+            .actions {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <div class="wrapper">
+            <div class="small">Page not found</div>
+
+            <h1>404</h1>
+
+            <h2>This page doesn’t exist</h2>
+
+            <p>
+                The link you followed might be broken, outdated, or the page may have been moved.
+            </p>
+
+            <p>
+                If you're looking for a website developer, you're still in the right place.
+            </p>
+
+            <div class="actions">
+                <a href="/" class="btn btn-primary">Go Home</a>
+                <a href="/#portfolio" class="btn btn-secondary">View Portfolio</a>
+                <a href="/#contact" class="btn btn-secondary">Start a Project</a>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
